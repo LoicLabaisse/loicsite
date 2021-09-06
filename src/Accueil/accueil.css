@@ -58,9 +58,11 @@
   border: 2px solid #fff;
   height: 10px;
   width: 10px;
+  -webkit-transform: translate(-50%, -100%) rotate(45deg);
   transform: translate(-50%, -100%) rotate(45deg);
   border-top: transparent;
   border-left: transparent;
+  -webkit-animation: scroll-down 1s ease-in-out infinite;
   animation: scroll-down 1s ease-in-out infinite;
 }
 .accueil-banner-button::after {
