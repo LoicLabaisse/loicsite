@@ -43,7 +43,7 @@ const Footer = () => {
             <AiIcons.AiFillMail />
             Email
           </h3>
-          <p className="description-contact-footer">06.36.57.93.81</p>
+          <p className="description-contact-footer">labaisse.loic@gmail.com</p>
         </div>
       </div>
     </div>

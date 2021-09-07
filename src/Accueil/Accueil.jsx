@@ -185,7 +185,7 @@ const Accueil = () => {
               <h3 className="title-contact">
                 <AiIcons.AiFillMail /> Email
               </h3>
-              <p className="description-contact">06.36.57.93.81</p>
+              <p className="description-contact">labaisse.loic@gmail.com</p>
             </div>
           </div>
         </div>
