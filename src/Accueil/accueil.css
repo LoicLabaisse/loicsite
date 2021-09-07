@@ -205,6 +205,7 @@
   margin-bottom: 65px;
   border: 2px solid;
   -o-border-image: -o-linear-gradient(310deg, #00ccff, #080d24, #d400d4);
+  -webkit-border-image: linear-gradient(140deg, #00ccff, #080d24, #d400d4); ;
      border-image: linear-gradient(140deg, #00ccff, #080d24, #d400d4);
   border-image-slice: 1;
   border-left: transparent;
