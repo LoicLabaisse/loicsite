@@ -11,6 +11,7 @@ const About = () => {
       </div>
       <div className="about-content">
         <h1 className="about-title">A propos de moi</h1>
+        <hr className="underscore-about"/>
         <p className="about-description">
           Je m'appelle Loïc , je suis né le 24/05/1995 dans le Lot et Garonne.
           <br/>

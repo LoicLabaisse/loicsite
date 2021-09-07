@@ -10,13 +10,13 @@
   margin-left: 35px;
   font-size: 2rem;
   text-align: center;
-  border: 2px solid;
-  -o-border-image: -o-linear-gradient(310deg, #00ccff, #080d24, #d400d4);
-     border-image: linear-gradient(140deg, #00ccff, #080d24, #d400d4);
-  border-image-slice: 1;
-  border-left: transparent;
-  border-right: transparent;
-  border-top: transparent;
+
+}
+.underscore-about{
+  height: 2px;
+  background: linear-gradient(140deg, #00ccff, #080d24, #d400d4);
+  border: none;
+  width: 60%;
 }
 .about-description{
     margin-left: 15px;
@@ -39,4 +39,6 @@
     margin-left: 70px;
     margin-right: 70px;
   }
-}
+  .underscore-about{
+    width: 40%;
+  }}
