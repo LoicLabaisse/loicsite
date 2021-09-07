@@ -55,37 +55,47 @@ const Accueil = () => {
           </h2>
           <hr className="underscore_title" />
           <div className="accueil-skills-content">
+          <hr className="underscore-global-title"/>
             <h3>Domaines de compétences</h3>
+            <hr className="underscore-global-title"/>
 
             <ul className="skills-list-one">
               <li>
                 <h4>GESTION DE PROJETS WEB.</h4>
+                <hr className="underscore-global"/>
                 <p>Site vitrine, évènementiel, e-commerce, application.</p>
               </li>
               <li>
                 <h4>APPLICATIONS SPÉCIFIQUES ET INTERFACE D'ADMINISTRATION</h4>
+                <hr className="underscore-global"/>
                 <p>MYSQL | SQL | EXPRESS | NODE.JS</p>
               </li>
               <li>
                 <h4>INTÉGRATION HTML / CSS</h4>
+                <hr className="underscore-global"/>
                 <p>Codage à la main respectueux des standards du Web</p>
               </li>
               <li>
                 <h4>DYNAMISE DES PAGES AVEC JAVASCRIPT</h4>
+                <hr className="underscore-global"/>
                 <p>Utilisation des Frameworks React et Angular</p>
               </li>
               <li>
                 <h4>VALIDATION W3C,RÉFÉRENCEMENT NATUREL SEO</h4>
+                <hr className="underscore-global"/>
                 <p>Accessibilité et ergonomie des pages web</p>
               </li>
               <li>
                 <h4>CONCEPTION MULTI-PLATEFORMES</h4>
+                <hr className="underscore-global"/>
                 <p>Compatible tous supports, tablette et application mobile</p>
               </li>
             </ul>
           </div>
           <div className="skill-list-two">
+          <hr className="underscore-global-title"/>
             <h3>Compétences en développement</h3>
+            <hr className="underscore-global-title"/>
             <div className="bar-global">
               {" "}
               <div className="bar">
