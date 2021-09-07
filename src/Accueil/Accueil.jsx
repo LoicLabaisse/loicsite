@@ -41,7 +41,7 @@ const Accueil = () => {
         <div className="accueil-title">
           <h1>Labaisse Loïc</h1>
           <h3>Développeur Web Full Stack</h3>
-          <h4>React | Angular | Node.js | Express | mySQL</h4>
+          <h4>React | Angular | Node.js | Express | MySQL</h4>
         </div>
         <a href="#skills">
           <div href="#skills" className="accueil-banner-button"></div>
