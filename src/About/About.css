@@ -11,7 +11,8 @@
   font-size: 2rem;
   text-align: center;
   border: 2px solid;
-  border-image: linear-gradient(140deg, #00ccff, #080d24, #d400d4);
+  -o-border-image: -o-linear-gradient(310deg, #00ccff, #080d24, #d400d4);
+     border-image: linear-gradient(140deg, #00ccff, #080d24, #d400d4);
   border-image-slice: 1;
   border-left: transparent;
   border-right: transparent;

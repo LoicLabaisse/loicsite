@@ -2,6 +2,10 @@
   width: 100%;
   height: 100vh;
   background-color: red;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))),
+    url(../image/ResponsiveAccueil.jpg) no-repeat;
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../image/ResponsiveAccueil.jpg) no-repeat;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../image/ResponsiveAccueil.jpg) no-repeat;
   background-size: cover;
@@ -59,7 +63,8 @@
   height: 10px;
   width: 10px;
   -webkit-transform: translate(-50%, -100%) rotate(45deg);
-  transform: translate(-50%, -100%) rotate(45deg);
+  -ms-transform: translate(-50%, -100%) rotate(45deg);
+      transform: translate(-50%, -100%) rotate(45deg);
   border-top: transparent;
   border-left: transparent;
   -webkit-animation: scroll-down 1s ease-in-out infinite;
@@ -67,7 +72,23 @@
 }
 .accueil-banner-button::after {
   top: 30%;
-  animation-delay: 0.3s;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+@-webkit-keyframes scroll-down {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    top: 90%;
+  }
 }
 @keyframes scroll-down {
   0% {
@@ -104,7 +125,8 @@
   width: 98%;
   border-radius: 5px;
   margin: auto;
-  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  -webkit-box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+          box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
   background-color: #212121;
 }
 .skills-title {
@@ -125,13 +147,18 @@
 }
 .accueil-skills-content h3 {
   height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 65px;
   font-size: 2rem;
   text-align: center;
   border: 2px solid;
-  border-image: linear-gradient(140deg, #00ccff, #080d24, #d400d4);
+  -o-border-image: -o-linear-gradient(310deg, #00ccff, #080d24, #d400d4);
+     border-image: linear-gradient(140deg, #00ccff, #080d24, #d400d4);
   border-image-slice: 1;
   border-left: transparent;
   border-right: transparent;
@@ -152,7 +179,8 @@
 .accueil-skills-content ul h4 {
   font-size: 1rem;
   border-bottom: 2px solid blue;
-  border-image: linear-gradient(140deg, #00ccff, #080d24, #d400d4);
+  -o-border-image: -o-linear-gradient(310deg, #00ccff, #080d24, #d400d4);
+     border-image: linear-gradient(140deg, #00ccff, #080d24, #d400d4);
   border-image-slice: 1;
   padding-bottom: 15px;
   width: 80%;
@@ -165,14 +193,19 @@
 
 .skill-list-two h3 {
   height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 65px;
   font-size: 2rem;
   text-align: center;
   margin-bottom: 65px;
   border: 2px solid;
-  border-image: linear-gradient(140deg, #00ccff, #080d24, #d400d4);
+  -o-border-image: -o-linear-gradient(310deg, #00ccff, #080d24, #d400d4);
+     border-image: linear-gradient(140deg, #00ccff, #080d24, #d400d4);
   border-image-slice: 1;
   border-left: transparent;
   border-right: transparent;
@@ -185,7 +218,8 @@
   width: 100%;
   background-color: #444;
   border-radius: 10px;
-  box-shadow: inset 5px 5px 10px #2c2c2c, inset -5px -5px 10px #5c5c5c;
+  -webkit-box-shadow: inset 5px 5px 10px #2c2c2c, inset -5px -5px 10px #5c5c5c;
+          box-shadow: inset 5px 5px 10px #2c2c2c, inset -5px -5px 10px #5c5c5c;
   margin-top: 30px;
 }
 .bar-stat {
@@ -196,36 +230,61 @@
 }
 
 #html {
+  background: -o-linear-gradient(310deg, #00ccff, #080d24, #d400d4);
   background: linear-gradient(140deg, #00ccff, #080d24, #d400d4);
-  animation: htmlSlide 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+  -webkit-animation: htmlSlide 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+          animation: htmlSlide 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
 }
 #css {
+  background: -o-linear-gradient(310deg, #00ccff, #080d24, #d400d4);
   background: linear-gradient(140deg, #00ccff, #080d24, #d400d4);
-  animation: cssSlide 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+  -webkit-animation: cssSlide 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+          animation: cssSlide 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
 }
 #js {
+  background: -o-linear-gradient(310deg, #00ccff, #080d24, #d400d4);
   background: linear-gradient(140deg, #00ccff, #080d24, #d400d4);
-  animation: jsSlide 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+  -webkit-animation: jsSlide 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+          animation: jsSlide 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
 }
 #react {
+  background: -o-linear-gradient(310deg, #00ccff, #080d24, #d400d4);
   background: linear-gradient(140deg, #00ccff, #080d24, #d400d4);
-  animation: reactSlide 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+  -webkit-animation: reactSlide 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+          animation: reactSlide 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
 }
 #angular {
+  background: -o-linear-gradient(310deg, #00ccff, #080d24, #d400d4);
   background: linear-gradient(140deg, #00ccff, #080d24, #d400d4);
-  animation: angularSlide 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+  -webkit-animation: angularSlide 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+          animation: angularSlide 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
 }
 #node {
+  background: -o-linear-gradient(310deg, #00ccff, #080d24, #d400d4);
   background: linear-gradient(140deg, #00ccff, #080d24, #d400d4);
-  animation: nodeSlide 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+  -webkit-animation: nodeSlide 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+          animation: nodeSlide 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
 }
 #c {
+  background: -o-linear-gradient(310deg, #00ccff, #080d24, #d400d4);
   background: linear-gradient(140deg, #00ccff, #080d24, #d400d4);
-  animation: cSlide 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+  -webkit-animation: cSlide 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+          animation: cSlide 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
 }
 #sql {
+  background: -o-linear-gradient(310deg, #00ccff, #080d24, #d400d4);
   background: linear-gradient(140deg, #00ccff, #080d24, #d400d4);
-  animation: sqlSlide 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+  -webkit-animation: sqlSlide 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+          animation: sqlSlide 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+}
+
+@-webkit-keyframes htmlSlide {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
 }
 
 @keyframes htmlSlide {
@@ -236,12 +295,28 @@
     width: 80%;
   }
 }
+@-webkit-keyframes cssSlide {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 75%;
+  }
+}
 @keyframes cssSlide {
   0% {
     width: 0%;
   }
   100% {
     width: 75%;
+  }
+}
+@-webkit-keyframes jsSlide {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
   }
 }
 @keyframes jsSlide {
@@ -252,12 +327,28 @@
     width: 80%;
   }
 }
+@-webkit-keyframes reactSlide {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
 @keyframes reactSlide {
   0% {
     width: 0%;
   }
   100% {
     width: 70%;
+  }
+}
+@-webkit-keyframes angularSlide {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60%;
   }
 }
 @keyframes angularSlide {
@@ -268,6 +359,14 @@
     width: 60%;
   }
 }
+@-webkit-keyframes sqlSlide {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 65%;
+  }
+}
 @keyframes sqlSlide {
   0% {
     width: 0%;
@@ -276,12 +375,28 @@
     width: 65%;
   }
 }
+@-webkit-keyframes cSlide {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 40%;
+  }
+}
 @keyframes cSlide {
   0% {
     width: 0%;
   }
   100% {
     width: 40%;
+  }
+}
+@-webkit-keyframes nodeSlide {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 65%;
   }
 }
 @keyframes nodeSlide {
@@ -299,8 +414,13 @@
   width: 100%;
   height: 100vh;
   margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-size: cover;
   background-image: url(../image/Responsive.jpg);
   background-repeat: no-repeat;
@@ -328,15 +448,19 @@
 .project-global ul {
   width: 100%;
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding: 0;
 }
 .project-box {
   margin-left: 10px;
   margin-right: 10px;
   border-radius: 5px;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   width: 500px;
   height: 500px;
 
@@ -360,6 +484,7 @@
   padding-bottom: 20px;
 }
 .project-global hr {
+  background: -o-linear-gradient(310deg, #00ccff, #080d24, #d400d4);
   background: linear-gradient(140deg, #00ccff, #080d24, #d400d4);
   height: 3px;
   border: none;
@@ -382,8 +507,12 @@
   font-weight: 600;
   font-size: 12px;
   text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -409,6 +538,10 @@
 
 @media screen and (min-width: 960px) {
   .accueil-banner {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))),
+      url(../image/AccueilBanner.jpg) no-repeat;
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(../image/AccueilBanner.jpg) no-repeat;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url(../image/AccueilBanner.jpg) no-repeat;
     background-position: none;
@@ -482,8 +615,12 @@
   /* responsive part */
   .accueil-responsive {
     margin-top: 150px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-evenly;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
   .accueil-responsive h2 {
     font-size: 4.2rem;
@@ -513,20 +650,30 @@
     font-size: 4.5rem;
   }
   .project-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     width: 100%;
     margin: auto;
     margin-top: 100px;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .project-box {
+    -webkit-transition: ease-in-out 0.2s;
+    -o-transition: ease-in-out 0.2s;
     transition: ease-in-out 0.2s;
     width: 500px;
     height: 500px;
   }
   .project-box:hover {
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: ease-in-out 0.2s;
+    -o-transition: ease-in-out 0.2s;
     transition: ease-in-out 0.2s;
   }
 
@@ -536,8 +683,11 @@
     font-size: 4.5rem;
   }
   .contact-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     margin-top: 50px;
   }
   .title-contact {
@@ -550,4 +700,5 @@
 
   
 }
+
 
