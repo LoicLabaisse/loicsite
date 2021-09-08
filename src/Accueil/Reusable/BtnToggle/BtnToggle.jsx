@@ -11,7 +11,7 @@ const BtnToggle = () => {
     <div className="btn-toggle">
         {/*<BiIcons.BiSun className={theme ? "toggle-sun" : "toggle-sun active "}/>*/}
       <label className="switch">
-        <input type="checkbox" className={theme ? "checkbox dark" : "checkbox light"}  defaultChecked = {!theme}  onClick={toggleTheme} />
+        <input type="checkbox" className={theme ? "checkbox dark" : "checkbox light"}  onClick={toggleTheme} />
         <span className={theme ? "slider" : "slider light"} >{theme ? <BiIcons.BiSun className="sun"/> :<BsIcons.BsMoon className="moon"/>}</span>
       </label>
       {/*<BsIcons.BsMoon className={theme ?"toggle-moon" : "toggle-moon active"}/> */}
