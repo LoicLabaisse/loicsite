@@ -22,6 +22,18 @@
           animation: animation 0.8s forwards;
  overflow: none;
 }
+
+.SideBar.light {
+  background: #fff;
+  color: #212121;
+}
+.SideBar.light a {
+  text-decoration: none;
+  color: #212121;
+}
+.light-button{
+  background: #212121;
+}
 .SideBar a {
   text-decoration: none;
   color: #fff;
@@ -35,6 +47,9 @@
   font-size: 2rem;
   cursor: pointer;
   outline: none;
+}
+.closeIcon.light{
+  color: #212121;
 }
 
 .SideBar .SideBarContainer {

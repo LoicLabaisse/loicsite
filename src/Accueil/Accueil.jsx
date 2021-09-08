@@ -1,11 +1,16 @@
 import React from "react";
-import Home from "../Home/Home";
+
 import * as AiIcons from "react-icons/ai";
 import "./accueil.css";
 import ScrollUpBtn from "./Reusable/ScrollUpBtn";
 import Footer from "../Footer/Footer";
+import { useContext } from "react/cjs/react.development";
+import { ThemeContext } from "../Context/ThemeContext";
 
 const Accueil = () => {
+
+
+  const {theme} = useContext(ThemeContext)
   const projects = [
     {
       title: "Bistrot Régent",
@@ -33,12 +38,9 @@ const Accueil = () => {
     },
   ];
   return (
-    <div id="accueil"className="accueil">
+    <div className={theme ? "accueil dark" : "accueil light"}>
       <div className="accueil-banner">
-        <div className="accueil-navbar" id="accueil">
-          <Home />
-        </div>
-        <div className="accueil-title">
+        <div id="title" className="accueil-title">
           <h1>Labaisse Loïc</h1>
           <h3>Développeur Web Full Stack</h3>
           <h4>React | Angular | Node.js | Express | MySQL</h4>
@@ -151,10 +153,10 @@ const Accueil = () => {
           <hr className="underscore_title" />
           <div className="project-content">
             {projects.map((project, index) => (
-              <a href={project.link} target="blank">
+              <a className={theme ? "project-link dark" :"project-link light" } href={project.link} target="blank">
                 <div className="project-global">
                   <ul>
-                    <li className="project-box" key={index}>
+                    <li className={theme ? "project-box dark" : "project-box light"} key={index}>
                       <h2>{project.title}</h2>
                       <img src={project.image} alt={project.title} />
                       <p className="project-description">
@@ -176,14 +178,14 @@ const Accueil = () => {
           <div className="contact-content">
             <div className="contact-tel">
               <h3 className="title-contact">
-                <AiIcons.AiFillPhone />
+                <AiIcons.AiFillPhone className={theme ? "icon dark"  : "icon light"} />
                 Téléphone
               </h3>
               <p className="description-contact">06.36.57.93.81</p>
             </div>
             <div className="contact-email">
               <h3 className="title-contact">
-                <AiIcons.AiFillMail /> Email
+                <AiIcons.AiFillMail className={theme ? "icon dark"  : "icon light"} /> Email
               </h3>
               <p className="description-contact">labaisse.loic@gmail.com</p>
             </div>

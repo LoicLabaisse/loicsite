@@ -5,10 +5,14 @@
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  height: 100%;
+ 
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: absolute;
+  z-index: 1000;
+  height: 80px;
+        
 }
 
 
@@ -39,6 +43,9 @@
   cursor:pointer;
   color: #fff;
 }
+.burger.light{
+  color: #a19f9f
+}
 .Navbar ul{
   display: none;
 }
@@ -50,7 +57,15 @@
 .Navbar{
   background: rgba(255,255,255,0.2);
   width: 100%;
-  height: 100%;
+  height: 80px;
+  position: absolute;
+  z-index: 1000;
+
+}
+
+.navbar-color.light{
+  background: #212121;
+  color: #fff;
 }
 
 .Navbar .burger {

@@ -1,10 +1,23 @@
+
 .about-content {
+
+
   width: 100%;
     margin-bottom: 60px;
 }
 
+.about.dark{
+  background: #212121;
+  color:#fff
+}
+.about.light{
+  background: #fff;
+  color: #212121;
+}
+
 .about-title {
-  margin-top: 50px;
+  padding-top: 120px;
+  margin-top: 0;
   padding-bottom: 20px;
   width: 80%;
   margin-left: 35px;
@@ -30,8 +43,16 @@
     font-size: 4.2rem;
     text-align: center;
     margin: auto;
-    margin-top: 50px;
+    padding-top: 120px;
     width: 30%;
+  }
+  .about.dark{
+    background: #212121;
+    color:#fff
+  }
+  .about.light{
+    background: #fff;
+    color: #212121;
   }
   .about-description{
     font-size: 1.5rem;

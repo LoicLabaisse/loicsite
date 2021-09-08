@@ -1,10 +1,14 @@
 import React from "react";
 
 import * as AiIcons from "react-icons/ai";
+import { useContext } from "react/cjs/react.development";
+import { ThemeContext } from "../Context/ThemeContext";
 import Logo from "../image/logo.png";
 import "./Footer.css";
 
 const Footer = () => {
+
+  const {theme} = useContext(ThemeContext)
   return (
     <div className="footer">
       <div className="footer-logos">
@@ -12,12 +16,12 @@ const Footer = () => {
         <ul className="footer-list">
           <li>
             <a className="logo-list" href="https://www.linkedin.com/in/loïc-labaisse-7aa4691b7/">
-              <AiIcons.AiFillLinkedin />
+              <AiIcons.AiFillLinkedin className={theme ? "icon dark"  : "icon light"} />
             </a>
           </li>
           <li>
             <a className="logo-list" href="https://github.com/LoicLabaisse">
-              <AiIcons.AiFillGithub />
+              <AiIcons.AiFillGithub className={theme ? "icon dark"  : "icon light"} />
             </a>
           </li>
         </ul>
@@ -33,7 +37,7 @@ const Footer = () => {
         <h2>Labaisse Loïc</h2>
         <div className="contact-tel-footer">
           <h3 className="title-contact-footer">
-            <AiIcons.AiFillPhone />
+            <AiIcons.AiFillPhone  />
             Téléphone
           </h3>
           <p className="description-contact-footer">06.36.57.93.81</p>

@@ -1,3 +1,6 @@
+.footer{
+  height: 550px;
+}
 .footer-logos{
   display: -webkit-box;
   display: -ms-flexbox;
@@ -72,7 +75,7 @@
   display: -ms-flexbox;
   display: flex;
   border-top: 1px solid rgba(255,255,255,0.2); ;
-  height: 350px;
+  height: 450px;
 }
 .footer-logos{
  

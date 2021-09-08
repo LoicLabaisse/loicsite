@@ -3,32 +3,35 @@ import * as FaIcons from"react-icons/fa"
 import { Link } from 'react-router-dom';
 import './Navbar.css'
 import Logo from"../image/logo.png"
+import BtnToggle from '../Accueil/Reusable/BtnToggle/BtnToggle';
+import { useContext } from 'react/cjs/react.development';
+import { ThemeContext } from '../Context/ThemeContext';
 
 
 
 
-const Navbar =({toggle})=>{
+const Navbar =({toggle},{dark})=>{
 
     const [navbar, setNavbar] = useState(false);
+
+    const {theme}= useContext(ThemeContext)
 
 
 
     const NavbarUp = () => {
-        if (window.scrollY >= 100) {
+        if (window.scrollY >= 900) {
           setNavbar(true);
         } else {
           setNavbar(false);
         }
-      };
-
-
-      window.addEventListener("scroll", NavbarUp)
+      };      
+      window.addEventListener("scroll", NavbarUp )
     return(
 
         <div className={navbar ? "Navbar active" : "Navbar"}>
-            <nav>
-                <a href="/#accueil" id="accueil"><img className="NavBar-logo" src={Logo} alt="logo"/></a>
-                <FaIcons.FaBars className="burger" onClick={toggle}/>
+            <nav className={theme? "navbar-color dark " : "navbar-color light"}>
+                <a href="/#title" id="accueil"><img className={theme ? "NavBar-logo" : "NavBar-logo light"} src={Logo} alt="logo"/></a>
+                <FaIcons.FaBars className={theme ? "burger" : "burger light"} onClick={toggle}/>
             <ul>
                 <li>
                     <Link className="Navbar-list" to="/about"><span>A propos</span></Link>
@@ -42,6 +45,7 @@ const Navbar =({toggle})=>{
                 <li>
                     <a  className="Navbar-list" href="/#contact"><span>Contactez-moi</span></a>
                 </li>
+                <li><BtnToggle/></li>
             </ul>
             </nav>
         </div>

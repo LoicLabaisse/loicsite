@@ -1,0 +1,84 @@
+.btn-toggle{
+    display: flex;
+    width: 180px;
+    align-items: center;
+    color: #fff;
+    padding-left: 120px;
+}
+
+.sun{
+    padding-left: 35px;
+    padding-top: 5px;
+    color:#212121;
+
+}
+.moon{
+    padding-right: 30px!important;
+    padding-top: 5px;
+}
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 70px;
+    height: 34px;
+}
+.switch input{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider{
+    position: absolute;
+    cursor: pointer;
+    border-radius: 20px;
+
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background: #fff;
+}
+.slider.light{
+    background: #212121;
+}
+
+
+.slider:before{
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left:4px;
+    bottom:4px;
+    background: #212121;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+.slider.light:before{
+    background: #fff;
+}
+
+input:checked + .slider.light{
+    background: #212121 ;
+}
+input:checked + .slider:before{
+    transform: translateX(35px);
+}
+
+@media  screen and (min-width : 960px) {
+    .slider.light{
+        background: #fff!important;
+    }
+    .slider.light:before{
+        background: #212121;
+    }
+    .moon{
+        padding-left: 10px!important;
+        padding-top: 5px;
+        color: #212121;
+    }
+}

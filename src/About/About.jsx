@@ -1,14 +1,15 @@
 import React from "react";
 import "./About.css";
-import Home from "../Home/Home.jsx";
+
 import Footer from "../Footer/Footer";
+import { useContext } from "react/cjs/react.development";
+import { ThemeContext } from "../Context/ThemeContext";
 
 const About = () => {
+
+  const {theme}= useContext(ThemeContext)
   return (
-    <div className="About">
-      <div className="about-navbar">
-        <Home />
-      </div>
+    <div className={theme ? 'about dark' : "about light"}>
       <div className="about-content">
         <h1 className="about-title">A propos de moi</h1>
         <hr className="underscore-about"/>

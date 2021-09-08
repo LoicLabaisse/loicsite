@@ -16,7 +16,7 @@ const ScrollUpBtn = () => {
   window.addEventListener("scroll", buttonUp);
   return (
     <div className="scrollUpBtn">
-      <a className={scroll ? "active" : "to-top"} href="#accueil">
+      <a className={scroll ? "active" : "to-top"} href="#title">
         <BsIcons.BsArrowUpShort />
       </a>
     </div>
