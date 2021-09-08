@@ -1,7 +1,6 @@
-import React from "react";
+import React,{useContext} from "react";
 
 import * as AiIcons from "react-icons/ai";
-import { useContext } from "react/cjs/react.development";
 import { ThemeContext } from "../Context/ThemeContext";
 import Logo from "../image/logo.png";
 import "./Footer.css";

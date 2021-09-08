@@ -1,11 +1,10 @@
-import React from "react";
+import React,{useContext} from "react";
 import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 import * as MdIcons from "react-icons/md";
 import { Link } from "react-router-dom";
 import "./sideBar.css";
 import BtnToggle from "../../Accueil/Reusable/BtnToggle/BtnToggle";
-import { useContext } from "react/cjs/react.development";
 import { ThemeContext } from "../../Context/ThemeContext";
 
 const SideBar = ({ toggle }) => {

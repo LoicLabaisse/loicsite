@@ -1,10 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import * as FaIcons from"react-icons/fa"
 import { Link } from 'react-router-dom';
 import './Navbar.css'
 import Logo from"../image/logo.png"
 import BtnToggle from '../Accueil/Reusable/BtnToggle/BtnToggle';
-import { useContext } from 'react/cjs/react.development';
 import { ThemeContext } from '../Context/ThemeContext';
 
 

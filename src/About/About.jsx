@@ -1,8 +1,8 @@
-import React from "react";
+import React,{useContext} from "react";
 import "./About.css";
 
 import Footer from "../Footer/Footer";
-import { useContext } from "react/cjs/react.development";
+
 import { ThemeContext } from "../Context/ThemeContext";
 
 const About = () => {
